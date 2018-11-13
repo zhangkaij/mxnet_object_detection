@@ -1,5 +1,8 @@
 python train_faster_rcnn.py --gpus 0,2 --network resnet50_v1b --dataset coco --data-path ~/data/coco --save-prefix models/saved/ --resume models/faster_rcnn_resnet50_init.params
 
+# 自己准备的rec文件
+ python train_rec.py --gpus 2 --network faster_rcnn_resnet50_v1b_voc --dataset rec --data-path ./data --save-prefix models/saved/
+
 ## 准备自己的rec文件
 假设数据文件的结构为：
 + data_self
